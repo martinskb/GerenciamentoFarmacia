@@ -1,4 +1,16 @@
-package PACKAGE_NAME;
+public class ItemVenda {
+    private Produto produto;
+    private int quantidade;
 
-public class Venda {
+    public ItemVenda(Produto produto, int quantidade) {
+        this.produto = produto;
+        this.quantidade = quantidade;
+    }
+
+    public double calcularTotal() {
+        return produto.getPreco() * quantidade;
+    }
+
+    public Produto getProduto() { return produto; }
+    public int getQuantidade() { return quantidade; }
 }
