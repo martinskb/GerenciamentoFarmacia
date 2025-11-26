@@ -15,7 +15,6 @@ public class TelaPrincipal extends JFrame {
         JButton btnListarClientes = new JButton("Listar Clientes");
         JButton btnListarVendas = new JButton("Listar Vendas"); // NOVO BOTÃO
 
-        // Ações dos botões
         btnCadastroProduto.addActionListener(e ->
                 new TelaCadastroProduto(farmacia).setVisible(true));
 
@@ -31,11 +30,11 @@ public class TelaPrincipal extends JFrame {
         btnListarClientes.addActionListener(e ->
                 new TelaListaClientes(farmacia).setVisible(true));
 
-        // Ação do botão de listar vendas
+
         btnListarVendas.addActionListener(e ->
                 new TelaListaVendas(farmacia).setVisible(true));
 
-        // Layout da tela
+
         setLayout(new java.awt.GridLayout(6, 1));
         add(btnCadastroProduto);
         add(btnCadastroCliente);
